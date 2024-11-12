@@ -4,7 +4,8 @@
 
 body {
     font-family: "Inter Tight", Arial, Helvetica, sans-serif;
-    padding-top: 50rem;
+    padding-top: 48rem;
+    line-height: 1.5;
 }
 
 h1 {
@@ -52,8 +53,9 @@ a:active {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    font-family: "DM Serif", 'Times New Roman', Times, serif;
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
     font-weight: 400;
+    padding: 0 1rem 0;
 }
 
 .site-navigation li {
@@ -118,14 +120,34 @@ header {
 /* Activities Styles Selection */
 
 .about {
-    background-color: #d3a56e;
-    box-sizing: inherit;
-    padding-top: 2rem;
+    background-color: #e5d1b4;
+    padding: 3rem 2rem 5rem 2rem;
 }
 
 .about h2 {
     display: flex;
     justify-content: center;
+}
+
+.things-to-do {
+    background-color: #b2c9b3;
+    padding-top: 1rem;
+}
+
+.things-to-do h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.things-to-do p {
+    padding: 0 2rem 1rem 2rem;
+}
+
+.things-to-do video, 
+.things-to-do img {
+    display: block;
+    padding: 0 2rem 2rem;
+    margin: 0 auto;
 }
 
 
@@ -135,3 +157,20 @@ header {
 /* Credit Page Styles Selection */
 
 /* Footer Styles */
+
+footer {
+    background-color: #d3a56e;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 1rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem 0 0;
+}
