@@ -20,6 +20,10 @@ h2 {
     color: #000000;
 }
 
+h3 {
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+}
+
 /* lists */
 
 /* tables */
@@ -141,6 +145,7 @@ header {
 
 .things-to-do p {
     padding: 0 2rem 1rem 2rem;
+    text-align: center;
 }
 
 .things-to-do video, 
@@ -151,6 +156,44 @@ header {
 }
 
 
+FIXME:
+
+form {
+    /* max-width: 30rem; */
+    background-color: #e5d1b4;
+    padding: 2rem 1rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h3 {
+    text-align: center;
+    font-family: "DM Serif";
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: none;
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    
+    
+}
+
+input[type="submit"] {
+    background-color: #f7a500;
+    border: 1px solid #f7a500;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 0.6rem;
+    margin: 2rem 0 0;
+}
 
 /* Architecture Styles Selection */
 
@@ -168,6 +211,11 @@ footer ul {
     display: flex;
     justify-content: space-between;
     padding: 1rem 1rem 1rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
 }
 
 footer p {
