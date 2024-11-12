@@ -5,17 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palm Springs Credits</title>
 
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/menu-toggle.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="site-navigation">
+            <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12.002 2c5.518 0 9.998 4.48 9.998 9.998 0 5.517-4.48 9.997-9.998 9.997-5.517 0-9.997-4.48-9.997-9.997 0-5.518 4.48-9.998 9.997-9.998zm2.498 9.995c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25zm-3.75 0c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25zm-3.75 0c0-.69.56-1.25 1.25-1.25s1.25.56 1.25 1.25-.56 1.25-1.25 1.25-1.25-.56-1.25-1.25z"/></svg>
+            </button>
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="activites.html">Activities</a></li>
                 <li><a href="architecture.html">Architecture</a></li>
@@ -25,14 +35,14 @@
 
     </header>
     <main>
-        <!-- FIXME: add section or div or something -->
-
-        <h1>Credits</h1>
-        <img src="images/credits.jpg" alt="Joshua Tree National Park, desert with desert plants and mountain in background">
+        
+        <section class="title">
+            <h1>Credits</h1>
+            <img src="images/credits.jpg" alt="Joshua Tree National Park, desert with desert plants and mountain in background">
+        </section>
 
         <section>
             <section>
-                <!-- FIXME: semantic tags? -->
 
                 <h2>Home</h2>
                 

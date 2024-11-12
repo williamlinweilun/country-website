@@ -1,0 +1,133 @@
+/* Base Styles */
+    /* Typography- font & text element */
+    /* Elements (lists, tables, figures, images) */
+
+body {
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: "DM Serif", 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #f7a500;
+}
+
+h2 {
+    font-family: "DM Serif", 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #b2c9b3;
+}
+
+/* lists */
+
+/* tables */
+/* figures */
+/* images */
+/* links */
+
+
+/* LINKS */
+
+a, 
+a:visited {
+    color: #000000; 
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #f7a500;
+}
+
+.site-wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/* header */
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "DM Serif", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.site-navigation li {
+    display: inline-block;
+    
+
+}
+
+
+
+
+
+/* Layout */
+    /*  */
+
+/* Components */
+
+/* HEADER */
+
+header { 
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    background-color: #d3a56e;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+
+
+/* MAIN */
+
+.title h1 {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: 10rem;
+    z-index: 99;
+}
+
+.title img {
+    display: block;
+    position: relative;
+    top: -0.8rem;
+    z-index: 80;
+    
+}
+
+
+/* FOOTER */
+
+
+/* Header Styles */
+
+/* Hero Styles */
+
+/* Homepage Styles Selection */
+
+/* Activities Styles Selection */
+
+.about {
+    background-color: #c97a4d;
+}
+
+.about h2 {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+
+
+/* Architecture Styles Selection */
+
+/* Credit Page Styles Selection */
+
+/* Footer Styles */
