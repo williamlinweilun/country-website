@@ -17,6 +17,7 @@ h2 {
     font-family: "DM Serif", 'Times New Roman', Times, serif;
     font-size: 2rem;
     color: #000000;
+    text-align: center;
 }
 
 h3 {
@@ -28,6 +29,7 @@ h3 {
 /* tables */
 /* figures */
 /* images */
+
 /* links */
 
 
@@ -215,7 +217,56 @@ article img {
 
 /* ARCHITECTURE SECTION */
 
+.architecture-about {
+    background-color: #b2c9b3;
+    padding: 3rem 2rem 3rem;
+    margin-top: -2rem;
+}
+
+.architecture-about h2 {
+    text-align: center;
+}
+
+.architecture-gallery {
+    background-color: #e5d1b4;
+    padding: 2rem 0 1rem 0;
+}
+
+.architecture-gallery img {
+    display: block;
+    padding: 0 2rem 2rem;
+    margin: 0 auto;
+}
+
+.table {
+    background-color: #b2c9b3;
+    padding: 4rem 2rem 2rem;
+    
+}
+
+
+
+tr, 
+th,
+td {
+    border: 1px solid #000000;
+}
+
+
 /* CREDITS SECTION */
+
+.credits {
+    background-color: #e5d1b4;
+    padding: 3rem 2rem 3rem;
+    margin-top: -2rem;
+}
+
+.credits h3, 
+.credits p {
+    text-align: center;
+}
+
+
 
 /* FOOTER */
 
