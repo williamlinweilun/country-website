@@ -1,16 +1,16 @@
 // Main Navigation Toggle
-const button = document.getElementById( 'main-nav-button' );
-const links  = document.getElementById( 'main-nav-list' );
+const button = document.getElementById( 'menu-toggle' );
+const links  = document.querySelector( '.nav-menu' );
 
 button.addEventListener( 'click', function() {
     links.classList.toggle( 'toggled' );
-} );
+});
 
 
-// Thumb Navigation Toggle
-const thumbButton = document.getElementById( 'thumb-nav-button' );
-const thumbLinks  = document.getElementById( 'thumb-nav-secondary' );
+// // Thumb Navigation Toggle
+// const thumbButton = document.getElementById( 'thumb-nav-button' );
+// const thumbLinks  = document.getElementById( 'thumb-nav-secondary' );
 
-thumbButton.addEventListener( 'click', function() {
-    thumbLinks.classList.toggle( 'toggled' );
-} );
+// thumbButton.addEventListener( 'click', function() {
+//     thumbLinks.classList.toggle( 'toggled' );
+// } );
