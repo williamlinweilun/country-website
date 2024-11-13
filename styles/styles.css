@@ -119,13 +119,12 @@ header {
 
 /* Hero Styles */
 
-/* Homepage Styles Selection */
-
-/* Activities Styles Selection */
+/* HOMEPAGE SECTION */
 
 .about {
     background-color: #e5d1b4;
     padding: 3rem 2rem 5rem 2rem;
+    margin-top: -1rem;
 }
 
 .about h2 {
@@ -195,11 +194,31 @@ input[type="submit"] {
     margin: 2rem 0 0;
 }
 
-/* Architecture Styles Selection */
+/* ACTIVITIES SECTION */
 
-/* Credit Page Styles Selection */
+.activities {
+    background-color: #e5d1b4;
+    padding: 3rem 2rem 5rem 2rem;
+    margin-top: -1rem;
+}
 
-/* Footer Styles */
+article h2, 
+article p {
+    text-align: center;
+}
+
+article img {
+    padding-bottom: 2rem;
+}
+
+
+
+
+/* ARCHITECTURE SECTION */
+
+/* CREDITS SECTION */
+
+/* FOOTER */
 
 footer {
     background-color: #d3a56e;
