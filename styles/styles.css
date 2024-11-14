@@ -35,16 +35,16 @@ h3 {
 
 /* LINKS */
 
-a, 
-a:visited {
-    color: #000000; 
-    text-decoration: none;
+a:hover {
+    color: #f7a500;
 }
 
-a:hover,
+a, 
+a:visited 
 a:focus,
 a:active {
-    color: #f7a500;
+    color: #000000;
+    text-decoration: none;
 }
 
 .site-wrapper {
@@ -305,12 +305,20 @@ td {
     margin-top: -3.2rem;
 }
 
+.credits h2 {
+    padding-top: 3rem;
+    border-bottom: 1px solid black; 
+}
+
 .credits h3, 
 .credits p {
     text-align: center;
 }
 
 
+.credits h3 {
+    padding-top: 2rem;
+}
 
 /* FOOTER */
 
