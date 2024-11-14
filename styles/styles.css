@@ -126,7 +126,32 @@ header {
     width: 3.5rem;
 }
 
+@media (min-width: 50em) {
 
+    .toggle-menu {
+        display: none;
+    }
+
+    .site-navigation {
+        flex: 1 1 auto; 
+        padding: 0 1rem;
+    }
+
+    .site-navigation ul,
+    .site-navigation.toggled ul {
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+        top: 1.5rem;
+        align-items: center;
+    }
+
+    .site-navigation a {
+        line-height: 1rem;
+    }
+
+
+}
 
 /* MAIN */
 
@@ -191,9 +216,6 @@ header {
     margin: 0 auto;
 }
 
-
-FIXME:
-
 form {
     /* max-width: 30rem; */
     background-color: #e5d1b4;
@@ -214,13 +236,18 @@ form h3 {
 input[type="text"],
 input[type="email"] {
     border: none;
-    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
     width: 100%;
+    margin-bottom: 1rem;
+    border: none; 
+}
+
+form fieldset {
+    border: none;
 }
 
 input[type="checkbox"] {
-    
-    
+    display: flex; 
+    flex-direction: column;
 }
 
 input[type="submit"] {
@@ -228,7 +255,7 @@ input[type="submit"] {
     border: 1px solid #f7a500;
     padding: 1rem 5rem 1rem 5rem;
     border-radius: 0.6rem;
-    margin: 2rem 0 0;
+    margin: 2rem 0 2rem;;
 }
 
 /* ACTIVITIES SECTION */
