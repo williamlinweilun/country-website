@@ -53,7 +53,7 @@ a:active {
 }
 
 
-/* header */
+/* HEADER */
 
 .site-navigation ul {
     list-style: none;
@@ -82,21 +82,9 @@ a:active {
     padding: 0.7rem;
 }
 
-
-
-
-
-/* Layout */
-    /*  */
-
-/* Components */
-
-/* HEADER */
 .logo img {
     height: 3rem;
     width: 3rem;
-    /* display: flex;
-    justify-content: flex-start; */
 }
 
 header { 
@@ -173,15 +161,17 @@ header {
     object-fit: cover;
 }
 
+@media (min-width: 50em) {
 
-/* FOOTER */
+    .site-wrapper p, 
+    .site-wrapper img, 
+    .site-wrapper video {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
 
-
-/* Header Styles */
-
-/* Hero Styles */
-
-/* HOMEPAGE SECTION */
+/* HOME PAGE */
 
 .about {
     background-color: #e5d1b4;
@@ -217,7 +207,6 @@ header {
 }
 
 form {
-    /* max-width: 30rem; */
     background-color: #e5d1b4;
     padding: 2rem 1rem 2rem;
     margin: 0 auto;
@@ -273,6 +262,9 @@ article p {
 
 article img {
     padding-bottom: 2rem;
+    display: block;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
 
@@ -304,6 +296,8 @@ article img {
 .table-architecture {
     background-color: #b2c9b3;
     padding: 4rem 2rem 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 table {
@@ -324,6 +318,26 @@ td {
 }
 
 
+@media (min-width: 50em) {
+
+    .architecture-gallery div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .architecture-gallery img {
+        height: 95%;
+        width: 95%;
+        object-fit: cover;
+    }
+
+    tr, 
+    th,
+    td {
+        padding: 1rem;
+    }
+}
+    
 /* CREDITS SECTION */
 
 .credits {
@@ -334,7 +348,7 @@ td {
 
 .credits h2 {
     padding-top: 3rem;
-    border-bottom: 1px solid black; 
+    border-top: 1px solid black; 
 }
 
 .credits h3, 
