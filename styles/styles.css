@@ -1,0 +1,416 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "DM Serif", 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: #f7a500;
+}
+
+h2 {
+    font-family: "DM Serif", 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: #000000;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+}
+
+/* lists */
+
+/* tables */
+/* figures */
+/* images */
+
+/* links */
+
+
+/* LINKS */
+
+a:hover {
+    color: #f7a500;
+}
+
+a, 
+a:visited 
+a:focus,
+a:active {
+    color: #000000;
+    text-decoration: none;
+}
+
+.site-wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.skip {
+    position: absolute;
+    left: -10000rem;
+    border: 1px solid #f7a500;
+    background-color: #f7a500;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: none;
+    text-align: center;
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1rem 0;
+    z-index: 100;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 6rem;
+    background-color:#c97a4d;
+    padding: 2rem 0 2rem;;
+    margin-top: -2rem;
+}
+
+.site-navigation ul.toggled {
+    display: block;
+    
+}
+
+.site-navigation li {
+    display: block;
+    padding: 0.7rem;
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    padding: 1rem 2rem 1rem;
+    width: 100%;
+    background-color: #c97a4d;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.toggle-menu {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.toggle-menu:focus {
+    border: 0;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+@media (min-width: 50em) {
+
+    .logo img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .toggle-menu {
+        display: none;
+    }
+
+    .site-navigation {
+        flex: 1 1 auto; 
+        padding: 0 1rem;
+    }
+
+    .site-navigation ul,
+    .site-navigation.toggled ul {
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+        top: 1.5rem;
+        align-items: center;
+    }
+
+    .site-navigation a {
+        line-height: 1rem;
+    }
+}
+
+/* MAIN */
+
+.title h1 {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    top: 25rem;
+    z-index: 99;
+}
+
+.title img {
+    display: block;
+    position: relative;
+    top: -3.1rem;
+    z-index: 80;
+    margin: 0 auto;
+    min-height: 100vh;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+@media (min-width: 50em) {
+
+
+    .site-wrapper p, 
+    .site-wrapper img, 
+    .site-wrapper video {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
+
+/* HOME PAGE */
+
+.about {
+    background-color: #e5d1b4;
+    padding: 3rem 2rem 5rem 2rem;
+    margin-top: -3.2rem;
+}
+
+.about h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.things-to-do {
+    background-color: #b2c9b3;
+    padding-top: 1rem;
+}
+
+.things-to-do h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.things-to-do p {
+    padding: 0 2rem 1rem 2rem;
+    text-align: center;
+}
+
+.things-to-do video, 
+.things-to-do img {
+    display: block;
+    padding: 0 2rem 2rem;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #e5d1b4;
+    padding: 2rem 1rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h3 {
+    text-align: center;
+    font-family: "DM Serif";
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: none; 
+}
+
+form fieldset {
+    border: none;
+}
+
+input[type="checkbox"] {
+    display: flex; 
+    flex-direction: column;
+}
+
+input[type="submit"] {
+    background-color: #f7a500;
+    border: 1px solid #f7a500;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 0.6rem;
+    margin: 2rem 0 2rem;;
+}
+
+/* ACTIVITIES SECTION */
+
+.activities {
+    background-color: #e5d1b4;
+    padding: 3rem 2rem 5rem 2rem;
+    margin-top: -3.2rem;
+}
+
+article h2, 
+article p {
+    text-align: center;
+}
+
+article img {
+    padding-bottom: 2rem;
+    display: block;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+
+
+
+/* ARCHITECTURE SECTION */
+
+.architecture-about {
+    background-color: #b2c9b3;
+    padding: 3rem 2rem 3rem;
+    margin-top: -3.2rem;
+}
+
+.architecture-about h2 {
+    text-align: center;
+}
+
+.architecture-gallery {
+    background-color: #e5d1b4;
+    padding: 2rem 0 1rem 0;
+}
+
+
+
+.architecture-gallery img {
+    display: block;
+    padding: 0 2rem 2rem;
+    margin: 0 auto;
+}
+
+.table-architecture {
+    background-color: #b2c9b3;
+    padding: 4rem 2rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+caption{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+tr, 
+th,
+td {
+    border: 1px solid #000000;
+    padding: 0.2rem;
+}
+
+
+@media (min-width: 50em) {
+
+    .architecture-gallery div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .architecture-gallery img {
+        height: 95%;
+        width: 95%;
+        object-fit: cover;
+    }
+
+    tr, 
+    th,
+    td {
+        padding: 1rem;
+    }
+}
+    
+/* CREDITS SECTION */
+
+.credits {
+    background-color: #e5d1b4;
+    padding: 3rem 2rem 3rem;
+    margin-top: -3.2rem;
+}
+
+.credits h2 {
+    padding-top: 3rem;
+    border-top: 1px solid black; 
+}
+
+.credits h3, 
+.credits p {
+    text-align: center;
+}
+
+
+.credits h3 {
+    padding-top: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #d3a56e;
+    padding: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem 1rem;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem 0 0;
+}
+
+@media (min-width: 50em){
+    
+    footer img {
+        width: 3rem;
+        height: 3rem;
+    }
+}

@@ -5,17 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palm Springs Credits</title>
 
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/menu-toggle.js" defer></script>
 </head>
-<body>
+<body>  
     <header>
-        <nav>
-            <ul>
+
+        <a href="#main" class="skip" >Skip to main content</a>
+
+        <a href="index.html" class="logo"><img src="images/logo.svg" alt="california 62 logo"></a>
+
+        <nav class="site-navigation">
+            
+            <button id="menu-toggle" class="toggle-menu" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <img src="images/iconmonstr-menu-circle-filled.svg" alt="menu toggle icon">    
+            </button>
+
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="activites.html">Activities</a></li>
                 <li><a href="architecture.html">Architecture</a></li>
@@ -24,24 +41,26 @@
         </nav>
 
     </header>
+
     <main>
-        <!-- FIXME: add section or div or something -->
+        
+        <section class="title">
+            <h1>Credits</h1>
+            <img src="images/credits.jpg" alt="Joshua Tree National Park, desert with desert plants and mountain in background">
+        </section>
 
-        <h1>Credits</h1>
-        <img src="images/credits.jpg" alt="Joshua Tree National Park, desert with desert plants and mountain in background">
-
-        <section>
-            <section>
-                <!-- FIXME: semantic tags? -->
+        <div class="site-wrapper">
+        <section id="main" class="credits">
 
                 <h2>Home</h2>
                 
-                <!-- TODO: add logo/svg credits -->
+                <h3>SVG and Logo</h3>
+                <p><a href="https://en.m.wikipedia.org/wiki/File:California_62.svg">Wikipedia</a></p>
 
                 <h3>Palm Trees</h3>
-                <p>Photo by William Lin</p> <!--Not sure how to give credit if need be-->
+                <p>Photo by William Lin</p> 
 
-                <h3>About Section Text</h3>
+                <h3>About Info</h3>
                 <p><a href="https://en.wikipedia.org/wiki/Palm_Springs,_California#Modern_architecture">Wikipedia</a></p>
 
                 <h3>Palm Springs Sign</h3>
@@ -52,10 +71,6 @@
 
                 <h3>Joshua Tree Video</h3>
                 <p><a href="https://www.pexels.com/video/time-lapse-at-joshua-tree-national-park-9010892/">Video</a> by Kindel Media</p>
-            </section>
-
-            <section>
-                <!-- FIXME: -->
 
                 <h2>Activities</h2>
 
@@ -66,7 +81,7 @@
                 <p>Photo by William Lin</p>
 
                 <h3>Palm Canyons</h3>
-                <p><a href="https://unsplash.com/photos/a-group-of-palm-trees-in-a-sandy-area-nDxTFLHhKzs">Photo</a> by Paul La Rosa on Unsplash</p>
+                <p><a href="https://www.pexels.com/photo/trees-in-a-mountain-valley-19575842/">Photo</a> by Mazin Omron on Pexels</p>
 
                 <h3>Coachella Valley Music Festival</h3>
                 <p><a href="https://unsplash.com/photos/people-watching-blue-triangle-stage-lights-KRqsbZTAXmc">Photo</a> by Hari Nandakumar on Unsplash</p>
@@ -77,13 +92,12 @@
                 <h3>Palm Springs VillageFest</h3>
                 <p><a href="https://unsplash.com/photos/silhouette-of-palm-trees-during-sunset-r41kyE0d0I4">Photo</a> by Justin Scocchio on Unsplash</p>
 
-            </section>
                 <h2>Architecture</h2>
 
                 <h3>Architecture Building Photo 1</h3>
                 <p>Photo by William Lin</p>
 
-                <h3>Mid-Century Modern Architecture Text</h3>
+                <h3>Mid-Century Modern Architecture About</h3>
                 <p><a href="https://en.wikipedia.org/wiki/Mid-century_modern#Mid-century_modern_in_Palm_Springs">Wikipedia</a></p>
 
                 <h3>Quote</h3>
@@ -100,27 +114,16 @@
 
                 <h3>Architecture, Yellow Door</h3>
                 <p><a href="https://unsplash.com/photos/blue-wooden-door-near-green-plants-during-daytime-beABEWthrpk">Photo</a> by Don Stouder on Unsplash</p>
-
-
-            <section>
-
-                <!-- FIXME: -->
-
-
-            </section>
-
         </section>
-
-
-
+        </div>
     </main>
 
     <footer>
         <ul>
-            <li><a href="images/iconmonstr-facebook-4.svg" alt="facebook icon"></a></li>
-            <li><a href="images/iconmonstr-instagram-14.svg" alt="instagram icon"></a></li>
-            <li><a href="images/iconmonstr-twitter-4.svg" alt="twitter icon"></a></li>
-            <li><a href="images/iconmonstr-youtube-9.svg" alt="youtube icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-facebook-4.svg" alt="facebook icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-instagram-14.svg" alt="instagram icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-twitter-4.svg" alt="twitter icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-youtube-9.svg" alt="youtube icon"></a></li>
         </ul>
 
         <p>&copy; 2024 William Lin</p> 

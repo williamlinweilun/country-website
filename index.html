@@ -5,111 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palm Springs</title>
 
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/menu-toggle.js" defer></script>
 </head>
+
 <body>
+
     <header>
-        <nav>
-            <ul>
+
+        <a href="#main" class="skip" >Skip to main content</a>
+
+        <a href="index.html" class="logo"><img src="images/logo.svg" alt="california 62 logo"></a>
+
+        <nav class="site-navigation">
+
+            <button id="menu-toggle" class="toggle-menu" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+                <img src="images/iconmonstr-menu-circle-filled.svg" alt="menu toggle icon">    
+            </button>
+
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="activites.html">Activities</a></li>
                 <li><a href="architecture.html">Architecture</a></li>
                 <li><a href="credits.html">Credits</a></li>
             </ul>
+
         </nav>
+
     </header>
 
-
-    <!-- TODO:
-                1. check semantics! not sure if i can use section within a section or if i should use article tags? or when to use DIV 
-                2. how do i give credit if i took the photo myself? do i need to put anything?
-                -->
-
     <main>
-        <!-- FIXME: add div or section? -->
-        <h1>Palm Springs</h1>
-        <img src="images/palm-springs-home-hero-image.jpg" alt="image of palm trees with blue sky">
 
-        <section>
-            <h2>About</h2>
-            <p>Palm Springs (Cahuilla: Séc-he) is a desert resort city in Riverside County, California, United States, within the Colorado Desert's Coachella Valley. The city covers approximately 94 square miles (240 km2), making it the largest city in Riverside County by land area. With multiple plots in checkerboard pattern, more than 10% of the city is part of the Agua Caliente Band of Cahuilla Indians reservation land and is the administrative capital of the most populated reservation in California.
+        <section class="title">
+            <h1>Palm Springs</h1>
+            <img src="images/palm-springs-home-hero-image.jpg" alt="image of palm trees with blue sky">
+            </section>
 
-            The population of Palm Springs was 44,575 as of the 2020 census, but because Palm Springs is a retirement location and a winter snowbird destination, the city's population triples between November and March.
+            <div class="site-wrapper">
+            <section id="main" class="about">
+
+                <h2>About</h2>
+                <p>Palm Springs (Cahuilla: Séc-he) is a desert resort city in Riverside County, California, United States, within the Colorado Desert's Coachella Valley. The city covers approximately 94 square miles (240 km2), making it the largest city in Riverside County by land area. With multiple plots in checkerboard pattern, more than 10% of the city is part of the Agua Caliente Band of Cahuilla Indians reservation land and is the administrative capital of the most populated reservation in California.
+
+                The population of Palm Springs was 44,575 as of the 2020 census, but because Palm Springs is a retirement location and a winter snowbird destination, the city's population triples between November and March.
+                    
+                The city is noted for its mid-century modern architecture, design elements, arts and cultural scene, and recreational activities.</p>
+            </section>
+
+            <section>
                 
-            The city is noted for its mid-century modern architecture, design elements, arts and cultural scene, and recreational activities.</p>
-        </section>
+                <article class="things-to-do">
+                    <h2>Activities</h2>
+                    <p>From desert oasis to music festivals, art, and shopping. </p>
+                    <video src="images/joshua-tree-video.mp4" autoplay muted loop></video>
+                </article>  
 
-        <section>
-            <h2>Activities</h2>
-            <p>From desert oasis to music festivals, art, and shopping. </p>
-            <img src="images/palm-springs-sign.jpg" alt="photo of palm springs sign">
-        </section>
+                <article class="things-to-do">
+                    <h2>Architecture</h2>
+                    <p>Take a leisurely walk through multiple neighborhoods and take in the famous Mid-Century Modern designs from world renown architects, and celebrity homes.</p>
+                    <img src="images/architecture-1.jpg" alt="photo of uniquely design home in palm springs">
+                </article>
+            </section>
 
-        <section>
-            <h2>Architecture</h2>
-            <p>Take a leisurely walk through multiple neighborhoods and take in the famous Mid-Century Modern designs from world renown architects, and celebrity homes.</p>
-            <img src="images/architecture-1.jpg" alt="photo of uniquely design home in palm springs">
-        </section>
+            <form action="#" method="post">
 
-        <section>
-            <video src="images/joshua-tree-video.mp4" autoplay muted loop></video>
-        </section>
+                <h3>Subscribe for monthly updates!</h3>
 
-        <form action="#" method="post">
+                <fieldset>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user-name">
 
-            <h3>Subscribe for monthly updates!</h3>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user-email">
+                </fieldset>
 
-            <fieldset>
-                <legend>Details</legend>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user-name">
+                <fieldset class="checkbox">
+                    <legend>What are you interested in? (Select all that apply)</legend>
 
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user-email">
-            </fieldset>
+                    <input type="checkbox" id="architecture" name="architecture">
+                    <label for="architecture">Architecture</label>
 
-            <fieldset>
-                <legend>What are you interested in? (Select all that apply)</legend>
+                    <input type="checkbox" id="art" name="art">
+                    <label for="art">Art</label>
 
-                <input type="checkbox" id="architecture" name="architecture">
-                <label for="architecture">Architecture</label>
+                    <input type="checkbox" id="coachella" name="coachella">
+                    <label for="coachella">Coachella</label>
 
-                <input type="checkbox" id="art" name="art">
-                <label for="art">Art</label>
+                    <input type="checkbox" id="food" name="food">
+                    <label for="food">Food & Drinks</label>
 
-                <input type="checkbox" id="coachella" name="coachella">
-                <label for="coachella">Coachella</label>
+                    <input type="checkbox" id="modernism-week" name="modernism-week">
+                    <label for="modernism-week">Modernism Week</label>
 
-                <input type="checkbox" id="food" name="food">
-                <label for="food">Food & Drinks</label>
+                    <input type="checkbox" id="nature" name="nature">
+                    <label for="nature">Nature</label>
 
-                <input type="checkbox" id="modernism-week" name="modernism-week">
-                <label for="modernism-week">Modernism Week</label>
-
-                <input type="checkbox" id="nature" name="nature">
-                <label for="nature">Nature</label>
-
-                <input type="checkbox" id="shopping" name="shopping">
-                <label for="shopping">Shopping</label>
-            </fieldset>
-        </form>
-
+                    <input type="checkbox" id="shopping" name="shopping">
+                    <label for="shopping">Shopping</label>
+                </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        
+            </div>
     </main>
 
+    
     <footer>
         <ul>
-            <li><a href="images/iconmonstr-facebook-4.svg" alt="facebook icon"></a></li>
-            <li><a href="images/iconmonstr-instagram-14.svg" alt="instagram icon"></a></li>
-            <li><a href="images/iconmonstr-twitter-4.svg" alt="twitter icon"></a></li>
-            <li><a href="images/iconmonstr-youtube-9.svg" alt="youtube icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-facebook-4.svg" alt="facebook icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-instagram-14.svg" alt="instagram icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-twitter-4.svg" alt="twitter icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-youtube-9.svg" alt="youtube icon"></a></li>
         </ul>
        
         <p>&copy; 2024 William Lin</p>
     </footer>
 </body>
+
 </html>

@@ -5,17 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palm Springs Architecture</title>
 
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize-fwd.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/menu-toggle.js" defer></script>
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
+
+        <a href="#main" class="skip" >Skip to main content</a>
+        
+        <a href="index.html" class="logo"><img src="images/logo.svg" alt="california 62 logo"></a>
+
+        <nav class="site-navigation">
+
+            <button id="menu-toggle" class="toggle-menu" aria-controls="header-menu" aria-expanded="false" aria-label="Menu Toggle">
+            <img src="images/iconmonstr-menu-circle-filled.svg" alt="menu toggle icon">    
+            </button>
+
+            <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="activites.html">Activities</a></li>
                 <li><a href="architecture.html">Architecture</a></li>
@@ -24,12 +42,17 @@
         </nav>
 
     </header>
+
     <main>
 
-        <h1>Architecture</h1>
-        <img src="images/architecture-1.jpg" alt="mid century modern style home with mountain in background">
+        <section class="title">
+            <h1>Architecture</h1>
+            <img src="images/architecture-1.jpg" alt="mid century modern style home with mountain in background">
+        </section>
+        
+        <div class="site-wrapper">
 
-        <section>
+        <section id="main" class="architecture-about">
                 <h2>Mid-Century Modern Architecture</h2>
                 <p>Mid-century modern (MCM) is a movement in interior design, product design, graphic design, architecture and urban development that was present in all the world, but more popular in North America, Brazil and Europe from roughly 1945 to 1970 during the United States's post-World War II period. 
 
@@ -42,16 +65,19 @@
                 On the exterior, a MCM home is normally very wide, partial brick or glass walls, low footprints with floor to ceiling windows and flat rooflines, while exposed ceilings and beams, open floor plans, ergonomically designed furniture and short staircases connecting rooms throughout the house often defines the home's interior.</p>
 
             <blockquote>
-                <p>...the sun, the pure air and the simple forms of the desert create perfect conditions for architecture.</p>
-                <cite>
-                    Albert Frey in a letter to Le Corbusier, 1935 about Palm Springs
-                </cite>
+                <p><q>...the sun, the pure air and the simple forms of the desert create perfect conditions for architecture.</q></p>
             </blockquote>
+                <p><cite> 
+                    Albert Frey in a letter to Le Corbusier, 1935 about Palm Springs 
+                </p></cite>
 
         </section>
 
-       <section class="architecture-gallary">
+       <section class="architecture-gallery">
 
+                <h2>Gallery</h2>
+
+                <div>
                 <img src="images/architecture-2.jpg" alt="mid century modern home 2, palm trees in front of house">
                 <img src="images/architecture-3.jpg" alt="mid century modern home 3, with old school car in driveway">
                 <img src="images/architecture-4.jpg" alt="mid century modern home 4, with cactus">
@@ -62,9 +88,11 @@
                 <img src="images/architecture-9.jpg" alt="mid century modern home 9, bedroom overlooking window to street">
                 <img src="images/architecture-10.jpg" alt="mid century modern home 10, living room">
                 <img src="images/architecture-11.jpg" alt="mid century modern home 11, orange front door">
+                </div>
+                
        </section>
         
-       <section>
+       <section class="table-architecture">
             <table>
                 <caption>Neighborhoods To Visit</caption>
                 
@@ -107,16 +135,16 @@
             </table>
        </section>
 
-
+       </div>
 
     </main>
 
     <footer>
         <ul>
-            <li><a href="images/iconmonstr-facebook-4.svg" alt="facebook icon"></a></li>
-            <li><a href="images/iconmonstr-instagram-14.svg" alt="instagram icon"></a></li>
-            <li><a href="images/iconmonstr-twitter-4.svg" alt="twitter icon"></a></li>
-            <li><a href="images/iconmonstr-youtube-9.svg" alt="youtube icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-facebook-4.svg" alt="facebook icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-instagram-14.svg" alt="instagram icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-twitter-4.svg" alt="twitter icon"></a></li>
+            <li><a href="#"><img src="images/iconmonstr-youtube-9.svg" alt="youtube icon"></a></li>
         </ul>
 
         <p>&copy; 2024 William Lin</p> 
