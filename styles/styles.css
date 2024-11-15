@@ -181,6 +181,7 @@ header {
     margin: 0 auto;
     min-height: 100vh;
     object-fit: cover;
+    filter: brightness(75%);
 }
 
 @media (min-width: 50em) {
@@ -310,6 +311,8 @@ article img {
     padding: 2rem 0 1rem 0;
 }
 
+
+
 .architecture-gallery img {
     display: block;
     padding: 0 2rem 2rem;
@@ -318,7 +321,7 @@ article img {
 
 .table-architecture {
     background-color: #b2c9b3;
-    padding: 4rem 2rem 2rem;
+    padding: 4rem 2rem 4rem;
     display: flex;
     justify-content: center;
 }
@@ -342,6 +345,10 @@ td {
 
 
 @media (min-width: 50em) {
+
+    cite {
+        /* margin-left: 30rem; */
+    }
 
     .architecture-gallery div {
         display: grid;
@@ -389,13 +396,14 @@ td {
 footer {
     background-color: #d3a56e;
     padding: 1rem;
+    color:#
 }
 
 footer ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem 1rem;
+    padding: 2rem 3rem 1rem;
 }
 
 footer img {
@@ -406,4 +414,12 @@ footer img {
 footer p {
     text-align: center;
     padding: 1rem 0 0;
+}
+
+@media (min-width: 50em){
+    
+    footer img {
+        width: 3rem;
+        height: 3rem;
+    }
 }
