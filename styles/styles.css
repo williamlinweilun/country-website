@@ -24,7 +24,33 @@ h3 {
     font-family: "Inter Tight", Arial, Helvetica, sans-serif;
 }
 
-/* lists */
+/* LISTS */
+.site-navigation ul {
+    list-style: none;
+    display: none;
+    text-align: center;
+    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1rem 0;
+    z-index: 100;
+    position: absolute;
+    left: 0; 
+    right: 0;
+    top: 6rem;
+    background-color:#c97a4d;
+    padding: 2rem 0 2rem;;
+    margin-top: -2rem;
+}
+
+.site-navigation ul.toggled {
+    display: block;
+    
+}
+
+.site-navigation li {
+    display: block;
+    padding: 0.7rem;
+}
 
 /* tables */
 /* figures */
@@ -52,7 +78,6 @@ a:active {
     margin: 0 auto;
 }
 
-
 /* HEADER */
 
 .skip {
@@ -68,33 +93,6 @@ a:active {
     position: static;
     width: auto;
     height: auto;
-}
-
-.site-navigation ul {
-    list-style: none;
-    display: none;
-    text-align: center;
-    font-family: "Inter Tight", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-    padding: 0 1rem 0;
-    z-index: 100;
-    position: absolute;
-    left: 0; 
-    right: 0;
-    top: 6rem;
-    background-color:#c97a4d;
-    padding: 2rem 0 2rem;;
-    margin-top: -2rem;
-}
-
-.site-navigation ul.toggled {
-    display: block;
-    
-}
-
-.site-navigation li {
-    display: block;
-    padding: 0.7rem;
 }
 
 .logo img {
@@ -181,7 +179,6 @@ header {
 }
 
 @media (min-width: 50em) {
-
 
     .site-wrapper p, 
     .site-wrapper img, 
@@ -287,9 +284,6 @@ article img {
     margin: 0 auto;
 }
 
-
-
-
 /* ARCHITECTURE SECTION */
 
 .architecture-about {
@@ -306,8 +300,6 @@ article img {
     background-color: #e5d1b4;
     padding: 2rem 0 1rem 0;
 }
-
-
 
 .architecture-gallery img {
     display: block;
