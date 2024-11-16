@@ -52,13 +52,6 @@ h3 {
     padding: 0.7rem;
 }
 
-/* tables */
-/* figures */
-/* images */
-
-/* links */
-
-
 /* LINKS */
 
 a:hover {
@@ -104,7 +97,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* text-align: center; */
     padding: 1rem 2rem 1rem;
     width: 100%;
     background-color: #c97a4d;
